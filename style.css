@@ -19,7 +19,8 @@ font-family: 'Carattere', cursive;
     font-size: 2rem;
 }
 
-.container{
+h1{
+    margin: 0;
     padding: 1rem; 
     text-align: center;   
 }

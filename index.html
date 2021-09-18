@@ -8,32 +8,53 @@
     <title>Banana Talk</title>
     <style>
         textarea {
-            width: 80%;
-            height: 10vh;
+            box-sizing: border-box;
             display: block;
-            margin: 1rem;
-            padding: 1rem;
+            width: 100%;
+            min-height: 20vh;
+            margin-top: 2rem;
+            font-size: large;
         }
-        #output{
-            border: 1px solid black;
-            height: 10vh;
-            width: 80%;
-            display: blocks;
-            margin: 1rem;
-            padding: 1rem;
+
+        #output {
+            box-sizing: border-box;
+            width: 100%;
+            min-height: 10vh;
+            max-height: 20vh;
+            overflow: scroll;
+            border: 1px solid var(--black);
         }
+            
     </style>
+    <link href="style.css" rel="stylesheet" />
 
 
 </head>
 
 <body>
-    <h1>hey this is banana talk</h1>
-    <textarea id="txt-Input" placeholder="Put your english setence here and we will convert it to banana"></textarea>
-    <button id="btn-translate">Translate</button>
-    <div style="font-size: larger;">output will come here👇</div>
-    <div id="output"></div>
-    <script src="app.js"></script>
+
+    <nav class="navigation">
+        <div>Banana Talk</div>
+
+    </nav>
+
+    <h1 class="container">Let we talk in banana language</h1>
+    <main>
+        <textarea id="txt-Input"
+            placeholder="Put your english setence here and we will convert it to banana"></textarea>
+        <button id="btn-translate">Translate</button>
+        <div style="font-size: larger;">Translation will come here👇</div>
+        <div id="output"></div>
+        <script src="app.js"></script>
+    </main>
+
+    <footer>
+        <div style="font-size:x-large">about</div>
+        <p>Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the translator
+            to convert your text from English to Minion speak or Banana language.</p>
+    </footer>
+
+
 </body>
 
 </html>
